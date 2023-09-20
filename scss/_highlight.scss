@@ -1,4 +1,4 @@
-.destack {
+.highlight {
     background-color: $color-04;
     width: 100%;
     
@@ -6,22 +6,25 @@
     &__title {
         color: $color-03;
         font-size: $font-big;
-        
+        text-align: center;
     }
     &__subtitle {
         font-size: $font-medium;
-        padding: 0.2%;
+        padding: 0.1%;
+        text-align: center;
     }
         
-        &__description {
+    &__article {
         font-size: $font-normal;
         color: $color-03;
-        padding: 2rem 0;
+        padding: 2% 10%;
+        text-align: justify;
+        
     }
 
     &__image {
         width: 60%;
-        height: auto;
-        margin: $space-default auto;
+        padding-bottom: 2%;
+        
     }
 }

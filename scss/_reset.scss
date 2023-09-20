@@ -19,12 +19,7 @@ header,
 section {
     color: $color-04;
     padding: 2rem 0;
-    
-    max-width: math.div(1200, 1200) * 100%;
 
-    @media (max-width: 1199px){
-        max-width: math.div(1000, 1200) * 100%;
-    }
 }
 
 header {
@@ -32,7 +27,7 @@ header {
 }
 
 section {
-    text-align: $align;
+    padding: 0;
 }
 
 .container {
@@ -44,7 +39,6 @@ section {
     }
 
 }
-
 
 
 img {
@@ -62,7 +56,8 @@ p {
     color: $color-01;
     font-size: $font-normal;
     margin-bottom: $mb;
-    text-align: $align;
+    text-align: justify;
+    justify-content: center;
 }
 
 h1 {
@@ -82,18 +77,13 @@ h3 {
     font-size: $font-medium;
 }
 
-h4{
-    padding: 3rem;
-    color: $color-02;
-    font-size: $font-normal;
-}
-
-footer {
+.footer {
     background-color: $color-04;
-    display: block;
     float: left;
-    padding-top: 1%;
+    padding-top: 2%;
+    padding-left: 3%;
     width: 100%;
+    justify-content: center;
     p {
         color: $color-02;
     }

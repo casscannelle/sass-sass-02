@@ -1,0 +1,100 @@
+@use 'sass:math';
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+div{
+    display: block;
+}
+
+article,
+header,
+section {
+    color: $color-04;
+    padding: 2rem 0;
+    
+    max-width: math.div(1200, 1200) * 100%;
+
+    @media (max-width: 1199px){
+        max-width: math.div(1000, 1200) * 100%;
+    }
+}
+
+header {
+    background-color: #fff;
+}
+
+section {
+    text-align: $align;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: math.div(1200, 1200) * 100%;
+
+    @media (max-width: 1199px){
+        max-width: math.div(1000, 1200) * 100%;
+    }
+
+}
+
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: $font-family-default;
+    font-size: $font-small;
+    color: $color-default;
+}
+
+p {
+    color: $color-01;
+    font-size: $font-normal;
+    margin-bottom: $mb;
+    text-align: $align;
+}
+
+h1 {
+    color: $color-01;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: $font-big;
+    }
+
+h2 {
+    color: $color-03;
+    font-size: $font-normal;
+    padding-top: 2%;
+}
+
+h3 {
+    color: $color-02;
+    font-size: $font-medium;
+}
+
+h4{
+    padding: 3rem;
+    color: $color-02;
+    font-size: $font-normal;
+}
+
+footer {
+    background-color: $color-04;
+    display: block;
+    float: left;
+    padding-top: 1%;
+    width: 100%;
+    p {
+        color: $color-02;
+    }
+}
